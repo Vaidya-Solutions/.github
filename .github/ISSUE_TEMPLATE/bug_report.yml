@@ -1,0 +1,28 @@
+name: Bug report
+description: Something isn’t working
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version/commit
+      placeholder: e.g., v0.1.0 or abc1234
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Clear steps that reproduce the bug
+      placeholder: 1) … 2) …
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and logs (if any)
+  - type: textarea
+    id: context
+    attributes:
+      label: Environment
+      placeholder: OS, Go/Elixir/Node versions, Docker?

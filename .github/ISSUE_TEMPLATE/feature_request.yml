@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an idea
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve / use case
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: APIs, config, UX—be as specific as possible
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: Backward compatible
+        - label: Tests can be added
+        - label: Docs/README changes included
