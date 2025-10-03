@@ -8,8 +8,6 @@ Focus areas: reliability, privacy-by-default, observability, and simple building
 - **mcp-plugin-template-go** — Production-leaning template for building MCP tools in Go.
 - **phoenix-otp-resilience-starter** — Phoenix/Elixir OTP starter with Oban jobs, supervision, and health checks.
 
-> These are small, composable foundations. Our product code and domain-specific plugins stay private.
-
 ## Principles
 - **Reliability first**: graceful degradation, retries/backoff, and chaos drills.
 - **Offline-ready**: local-first modes with clean sync paths.
