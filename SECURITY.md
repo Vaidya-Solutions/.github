@@ -1,24 +1,25 @@
 # Security Policy
 
-We take security seriously. Please **do not** open public issues for vulnerabilities.
+This is the default security policy for public open-source repositories under Vaidya Solutions. Private and proprietary repositories have repository-specific security guidance.
 
 ## Reporting a Vulnerability
-- Preferred: **GitHub Security Advisory** on the affected repo.
-- Alternate: email **security@vaidyasolutions.dev** (PGP available on request).
-- Include repo, version/commit, minimal PoC, impact, and suggested fix if known.
+
+Report suspected vulnerabilities privately to **jay@vaidyasolutions.com**.
+
+Do not open a public GitHub issue when disclosure could expose sensitive details. Do not include credentials, private keys, customer data, production identifiers, private logs, or exploit payloads in public issues.
+
+When safe, include a concise reproduction summary and affected component in the private report.
 
 ## Coordinated Disclosure
-- **Ack:** within 72 hours.
-- **Triage:** within 7 days.
-- **Fix target:** 30 days for high/critical, 90 days otherwise (may vary with scope).
-- We’ll credit reporters (opt-in) after a fix and coordinated release. We do not operate a paid bounty program.
+
+We will acknowledge receipt and work with the reporter toward a responsible resolution. We do not operate a paid bounty program.
 
 ## Scope
-- All public repositories under the **Vaidya Solutions** organization.
-- Please test only on your own instances with non-production data.
-- Out of scope: social engineering, physical attacks, volumetric DoS, 3rd-party services we don’t control.
+
+- Public repositories under the Vaidya Solutions organization.
+- Test only on your own instances with non-production data.
+- Out of scope: social engineering, physical attacks, volumetric denial-of-service, and third-party services we do not control.
 
 ## Dependencies
-We use Dependabot/code scanning. If you find an issue in a dependency, report it upstream and/or tell us privately so we can pin/patch.
 
-Thanks for helping keep users safe.
+If you find an issue in a dependency, report it upstream and notify us privately so we can pin or patch.

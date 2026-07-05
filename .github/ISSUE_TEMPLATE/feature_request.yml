@@ -1,7 +1,25 @@
 name: Feature request
-description: Suggest an idea
+description: Suggest an idea for a public open-source repository
 labels: ["enhancement"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This form applies only to public open-source repositories that
+        explicitly accept public contributions.
+
+        This is **not** a channel for:
+        - private Gideon product requests
+        - customer information or tenant data
+        - internal architecture or infrastructure details
+        - consultant access requests or engagement inquiries
+  - type: checkboxes
+    id: safe_and_scoped
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: This request contains no private product details, customer data, credentials, internal architecture, or sensitive material.
+          required: true
   - type: textarea
     id: problem
     attributes:
@@ -15,6 +33,14 @@ body:
     id: alternatives
     attributes:
       label: Alternatives considered
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and licensing
+      description: |
+        Disclose any proposed new dependencies, copied code, third-party
+        integrations, or licensing implications.
+      placeholder: None—no new dependencies or third-party material.
   - type: checkboxes
     id: scope
     attributes:

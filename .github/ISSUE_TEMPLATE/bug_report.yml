@@ -1,7 +1,26 @@
 name: Bug report
-description: Something isn’t working
+description: Something isn't working in a public open-source repository
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for bug reports in public open-source repositories only.
+
+        **Do not submit:**
+        - security vulnerabilities (follow the repository SECURITY.md instead)
+        - credentials, tokens, secrets, or private keys
+        - customer or tenant data
+        - production identifiers
+        - private logs or trace output
+        - exploit payloads
+  - type: checkboxes
+    id: safe_content
+    attributes:
+      label: Content confirmation
+      options:
+        - label: This report contains no security vulnerabilities, credentials, customer data, production identifiers, private logs, or exploit payloads.
+          required: true
   - type: input
     id: version
     attributes:
@@ -25,4 +44,4 @@ body:
     id: context
     attributes:
       label: Environment
-      placeholder: OS, Go/Elixir/Node versions, Docker?
+      placeholder: OS, runtime or tool versions, and container runtime if relevant

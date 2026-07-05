@@ -1,47 +1,38 @@
 # Contributing
 
-Thanks for helping improve Vaidya projects! Small, focused contributions are welcome.
+This guide applies only to Vaidya Solutions repositories that explicitly accept public contributions. Private and proprietary repositories — including Gideon — are not open to external contribution through ordinary forks or pull requests.
+
+External work for private repositories requires an approved, scoped engagement and must not be inferred from this document.
 
 ## Ways to contribute
-- File issues with clear repro steps
-- Improve docs/readmes/examples
-- Small PRs fixing bugs or adding tests
-- Propose changes via a short design note (issue → discussion → PR)
+
+- File focused issues with clear reproduction steps in public repositories that accept them.
+- Submit small, single-purpose pull requests with tests and documentation.
+- Propose larger changes through an issue or discussion before writing code.
 
 ## Ground rules
-- No secrets/PII in code or issues.
-- Keep PRs small and single-purpose.
-- Follow style/linting and add tests when code changes.
 
-## Dev quick refs
-**Go**: Go 1.22+  
-- `go fmt ./... && go vet ./...`  
-- (if configured) `golangci-lint run`  
-- `go test ./...`
+- Do not submit secrets, credentials, private keys, customer data, production identifiers, private logs, or unapproved copied code.
+- Disclose material third-party dependencies and any licensing implications.
+- Follow repository-local setup, validation, and style guidance.
+- Keep pull requests small and single-purpose.
 
-**Elixir**: OTP 26+/Elixir 1.16+  
-- `mix format && mix credo`  
-- `mix test`
+## Development quick reference
 
-**TypeScript**  
-- `npm run lint && npm run test` (or project scripts)  
-- Prettier/ESLint where configured
+**Go**: follow the repository's `Makefile` or documented validation commands. Typical targets: `make test`, `make lint`, `make build`.
 
-## Commits & PRs
-- Use **Conventional Commits** (e.g., `feat: …`, `fix: …`, `docs: …`).
-- Branch: `topic/short-description`.
-- Include: tests, docs/README updates, and a brief rationale.
-- Checklist:
-  - [ ] Lint/format pass
-  - [ ] Unit tests added/updated
-  - [ ] No secrets/credentials
-  - [ ] README or comments updated
+**TypeScript**: follow the repository's `package.json` scripts or documented commands. Common targets: `lint`, `typecheck`, `test`, `build`.
 
-## Issue triage
-We aim to **respond within 3 business days**. Tag “good first issue” and “help wanted” are beginner-friendly.
+## Commits and pull requests
+
+- Use [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, etc.).
+- Include tests, documentation updates, and a brief rationale.
+- Verify lint, format, and tests pass before submitting.
 
 ## Security
-If you suspect a vulnerability, follow **SECURITY.md** (private report). Please do not open a public issue.
+
+Report suspected vulnerabilities privately under the repository's `SECURITY.md`. Do not open a public issue for sensitive reports.
 
 ## License
-By contributing, you agree your contributions are licensed under the repository’s stated license.
+
+By contributing to a public repository, you agree your contributions are licensed under that repository's stated license.
