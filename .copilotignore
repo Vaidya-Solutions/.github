@@ -1,0 +1,8 @@
+# @file .copilotignore
+# @description GitHub Copilot context exclusions for the public .github community-health repo
+# @update-policy Keep minimal; this repo is intentionally lightweight.
+
+.git/
+node_modules/
+.env
+.env.*
