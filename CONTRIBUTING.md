@@ -17,12 +17,6 @@ External work for private repositories requires an approved, scoped engagement a
 - Follow repository-local setup, validation, and style guidance.
 - Keep pull requests small and single-purpose.
 
-## Development quick reference
-
-**Go**: follow the repository's `Makefile` or documented validation commands. Typical targets: `make test`, `make lint`, `make build`.
-
-**TypeScript**: follow the repository's `package.json` scripts or documented commands. Common targets: `lint`, `typecheck`, `test`, `build`.
-
 ## Commits and pull requests
 
 - Use [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, etc.).

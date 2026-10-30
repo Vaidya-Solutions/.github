@@ -2,8 +2,6 @@
 
 We build **Gideon**, a private, proprietary legal AI platform.
 
-Our production work is TypeScript-first, with Go used for selected stateless, Lambda-oriented, and performance-sensitive services. We also maintain selected public open-source projects and libraries.
-
 ## Principles
 
 - **Reliability**: graceful degradation, bounded retries, and chaos-ready design.
