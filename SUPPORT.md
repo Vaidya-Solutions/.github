@@ -1,8 +1,7 @@
 # Support
 
-Public open-source starter repositories under this organization may use their
-own issue tracker or a documented public support channel as described in the
-repository's README or CONTRIBUTING file.
+For repositories that accept public support requests, use the channel described
+in that repository's README or CONTRIBUTING file.
 
 This organization does **not** provide GitHub-based support for
 private/proprietary Gideon services.
